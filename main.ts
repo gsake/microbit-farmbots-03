@@ -8,11 +8,13 @@ input.onButtonPressed(Button.A, function () {
     while (!(Farmbots.validMissionID())) {
         Farmbots.startMission("hum")
     }
+    lcd1602.clear()
     lcd1602.putString(
     "x:" + Farmbots.getMissionX(),
     0,
     0
     )
+    lcd1602.set_LCD_Show(lcd1602.visibled.visible)
 })
 function connect2Internet () {
     lcd1602.putString(
