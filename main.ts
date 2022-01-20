@@ -10,9 +10,14 @@ input.onButtonPressed(Button.A, function () {
     }
     lcd1602.clear()
     lcd1602.putString(
-    "x:" + Farmbots.getMissionX(),
+    Farmbots.getMissionID(),
     0,
     0
+    )
+    lcd1602.putString(
+    "x:" + Farmbots.getMissionX() + "y:" + Farmbots.getMissionY(),
+    0,
+    1
     )
     lcd1602.set_LCD_Show(lcd1602.visibled.visible)
 })
