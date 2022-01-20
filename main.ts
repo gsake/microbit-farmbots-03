@@ -1,4 +1,5 @@
 input.onButtonPressed(Button.A, function () {
+    lcd1602.clear()
     lcd1602.putString(
     "Reset mission...",
     0,
